@@ -1,0 +1,15 @@
+<apex:page controller="SignatureReportController" >
+<apex:form >
+    <apex:pageBlock >
+    
+        <apex:pageBlockTable value="{!callList}" var="c">
+            <apex:column headerValue="Signature">                
+                <img src="data:/image/png;base64,{!c.Signature_vod__c}" />
+            </apex:column>        
+        </apex:pageBlockTable>
+    
+    </apex:pageBlock>
+
+
+</apex:form>
+</apex:page>
